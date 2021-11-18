@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.CommonBackground{
+    min-height: 100vh;
+    height: 100%;
+    background: #eee;
+}
+.login-form-section{
+    display: table;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+.inner-section-loign{
+    display: table-cell;
+    vertical-align: middle;
+}
+.loginIco{
+    width: 25px;
+    filter: invert(1);
+    float: right;
+}
+.login-btn{
+    text-align: left;
+}
+.login-section-content{
+    font-size: 8px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.login-left-section{
+    display: table;
+    min-height: 100vh;
+    height: 100%;
+}
+.setion-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+.notFoundUpper{
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+.notFoundIpper{
+    display: table-cell;
+    vertical-align: middle;
+}
+.linkStyle{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.linkStyle:hover{
+    text-decoration: underline;
+}
+.pageNotFoundImage{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    animation-name: pageNotFound;
+    animation-duration: 3s;
+}
+.createAccountLink{
+    clear: both;
+    text-align: left;
+    display: inline-block;
+    float: right;
+    margin-top: 35px;
+}
+.addTaskInput input{
+    display: inline-block;
+    width: 92%;
+    padding: 10px 8px;
+    border: 1px solid #e1e1e1;
+    margin-top: 5%;
+}
+.addTaskInput input:focus{
+    outline: 1px solid #a1a1a1;
+}
+.addTaskInput {
+    width: 80%;
+    margin: 0 auto;
+}
+.addTaskInput img{
+    width: 6%;
+    margin: -8px 0px 0 6px;
+    cursor: pointer;
+}
+.tasksSection{
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 18px;
+    max-height: 70vh;
+    height: auto;
+    overflow-y: auto;
+}
+.tasksSection p {
+    margin: 0;
+    background: #eee;
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    filter: drop-shadow(0px 0px 2px #bbb);
+}
+.tasksSection p:hover i::after{
+    content: "\00d7";
+    float: right;
+    font-size: 26px;
+    line-height: 14px;
+    background: #808080;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50px;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    margin: -1px 0 0 0;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-  scrollbar-track {
+    border-radius: 10px;
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #bbb; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #808080; 
+}
+.account_succes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.account_succes img {
+    width: 50%;
+    position: absolute;
+}
+.account_succes_content {
+    text-align: center;
+}
+.account_succes_content h1 {
+    font-weight: 800;
+    color: #00FF01;
+    text-shadow: 2px 2px 1px black;
+}
+@keyframes pageNotFound {
+    0%   {filter: grayscale(1);}
+    15%  {filter: grayscale(0.8);}
+    25%  {filter: grayscale(0.6);}
+    50%  {filter: grayscale(0.4);}
+    75%  {filter: grayscale(0.2);}
+    100% {filter: grayscale(0);}
+}
+@media only screen and (max-width: 425px){
+    .login-left-section{
+        display: block;
+        min-height: initial;
+    }
+    .login-btn{
+        width: 50% !important;
+    }
+    .login-form-section{
+        min-height: 50vh;
+    }
+    .signupBtn-mob{
+        width: 100% !important;
+        margin-bottom: 5%;
+    }
+    .pageNotFoundImage{
+        width: 75%;
+    }
+    .login-section-content{
+        letter-spacing: 3px;
+    }
+    .addTaskInput{
+        width: 100%;
+    }
+    .addTaskInput input{
+        width: 100%;
+    }
+    .addTaskInput img {
+        width: 10%;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+    .tasksSection{
+        width: 100%;
+        padding: 10px;
+    }
+}
