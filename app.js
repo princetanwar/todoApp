@@ -4,6 +4,8 @@ const routes = require("./config/routes")
 const port = 3000 || process.env.EXPRESS_PORT
 require('./config/connection')
 
+app.use(express.json({ limit: "1mb" }));
+
 app.set('view engine', 'hbs')
 app.use(express.static(__dirname + '/public'));
 app.use(routes)
